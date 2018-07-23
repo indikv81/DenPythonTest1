@@ -2,7 +2,7 @@ import subprocess as sp
 ip_1 = 10
 ip_2 = 15
 ip_3 = 11
-ip_4 = 113
+ip_4 = 114
 ip = str(ip_1) + "." + str(ip_2) + "." + str(ip_3) + "." + str(ip_4)
 print(ip)
 ip2 = "www.yandex.ru"
