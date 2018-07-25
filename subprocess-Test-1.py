@@ -18,14 +18,6 @@ def outputm(mod_name):
 
 dict_info = {}
 for x in mod_name:
-    dict_info.update(outputm(x))
-print(dict_info)
-
-#keys = {'a', 'e', 'i', 'o', 'u' }
-#value = [1]
-
-#owels = dict.fromkeys(keys, value)
-#print(vowels)
-
-#value.append(2)
-#print(vowels)
+    dict_info.update({x : outputm(x)})
+    print(dict_info[x]['Summary'])
+#print(dict_info)
