@@ -19,5 +19,5 @@ def outputm(mod_name):
 dict_info = {}
 for x in mod_name:
     dict_info.update({x : outputm(x)})
-    print(dict_info[x]['Summary'])
+    print(dict_info[x]['Name'] + ' ' + dict_info[x]['Version'] + ' (' + dict_info[x]['Summary'] + ') ' + dict_info[x]['Home-page'])
 #print(dict_info)
