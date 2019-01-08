@@ -14,5 +14,6 @@ def iq_test(numbers):
             even = n
     return (lnumbers.index(odd) + 1) * (numodd == 1) + (lnumbers.index(even) + 1) * (numeven == 1)
 
-print("Количество нечётных чисел: " + str(iq_test("2 4 7 8 10")))
-print("Количество нечётных чисел: " + str(iq_test("1 2 2")))
+print("Позиция нечётного числа: " + str(iq_test("2 4 7 8 10")))
+print("Позиция нечётного числа: " + str(iq_test("1 2 2")))
+print("Позиция нечётного числа: " + str(iq_test("2 5 2 6 8")))
