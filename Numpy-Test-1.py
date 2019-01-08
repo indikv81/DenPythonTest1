@@ -7,5 +7,5 @@ def f1(i, j):
     return (i + 1) * (j + 1)
 
 print(np.fromfunction(f1, (10, 10), dtype=np.int))
-
 print(np.arange(0, 3000, 2))
+print(np.arange(100, 2000, 3))

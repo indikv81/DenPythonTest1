@@ -57,6 +57,8 @@ rbutton3.grid(row=4, column=2)
 def getV(root):
     a = scale1.get()
     print("Значение: " + str(a))
+    text.delete('1.0', END)
+    text.insert('1.0', "Значение: " + str(a))
 scale1 = Scale(root, orient=HORIZONTAL, length=300, from_=50, to=80, tickinterval=5, resolution=5)
 button5 = Button(root, text="Получить значение")
 scale1.grid(row=5, column=0)
