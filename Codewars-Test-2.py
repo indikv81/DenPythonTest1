@@ -3,6 +3,8 @@ def iq_test(numbers):
     numodd = numeven = odd = even = 0
     odd = [int(x) for x in lnumbers if int(x) % 2 != 0]
     even = [int(x) for x in lnumbers if int(x) % 2 == 0]
+    print("Нечётные числа: " + str(odd))
+    print("Чётные числа: " + str(even))
     for n in lnumbers:
         if int(n) % 2 != 0:
             numodd += 1
@@ -12,5 +14,5 @@ def iq_test(numbers):
             even = n
     return (lnumbers.index(odd) + 1) * (numodd == 1) + (lnumbers.index(even) + 1) * (numeven == 1)
 
-print(iq_test("2 4 7 8 10"))
-print(iq_test("1 2 2"))
+print("Количество нечётных чисел: " + str(iq_test("2 4 7 8 10")))
+print("Количество нечётных чисел: " + str(iq_test("1 2 2")))
