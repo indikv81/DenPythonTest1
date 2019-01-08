@@ -1,3 +1,5 @@
+# 09.01.2019
+
 def iq_test(numbers):
     lnumbers = numbers.split(" ")
     numodd = numeven = odd = even = 0

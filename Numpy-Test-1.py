@@ -1,3 +1,5 @@
+# 09.01.2019
+
 import numpy as np
 
 ar1 = np.linspace(0, 2, 9)

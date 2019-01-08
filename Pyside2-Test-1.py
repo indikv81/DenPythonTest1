@@ -1,3 +1,5 @@
+# 09.01.2019
+
 import sys
 
 from PySide2.QtWidgets import QApplication, QLabel

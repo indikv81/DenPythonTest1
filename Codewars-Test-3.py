@@ -1,3 +1,5 @@
+# 09.01.2019
+
 def namelist(names):
     string = ''
     num = len(names)
