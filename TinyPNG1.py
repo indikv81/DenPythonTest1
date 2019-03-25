@@ -9,13 +9,13 @@ from PIL.ExifTags import TAGS
 def get_exif(fn):
     if pyexifinfo.check_if_this_file_exist(fn) == True:
         info.append(pyexifinfo.get_json(fn))
-    #source = tinify.from_file("e:/Foto/" + x)
-    #copyrighted = source.preserve("copyright", "creation", "location")
-    #copyrighted.to_file("e:/Foto/Optimized/" + x)
-    #print("Изображение - " + x + " успешно оптимизировано!")
+    source = tinify.from_file("e:/Foto/not_optimized/" + images[x])
+    copyrighted = source.preserve("copyright", "creation", "location")
+    copyrighted.to_file("e:/Foto/optimized/" + images[x])
+    print("Изображение - " + images[x] + " успешно оптимизировано!")
 
 tinify.key = "LC3QiqknWkCvmFVxAT6j1ZEPW7RwaeiY"
-tinify.proxy = "http://10.15.1.24:8080"
+#tinify.proxy = "http://192.168.0.1:8080"
 info = []
 
 if not os.path.exists("e:/Foto/not_optimized/"):
