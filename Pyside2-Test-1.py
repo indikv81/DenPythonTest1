@@ -1,14 +1,18 @@
-# 09.01.2019
+# 26.03.2019
 
 import sys
+from PySide2.QtWidgets import QApplication, QPushButton
+from PySide2.QtCore import Slot
 
-from PySide2.QtWidgets import QApplication, QLabel
+@Slot()
+def say_hello():
+ print("Button clicked, Hello!")
 
-if __name__ == "__main__":
-    app = QApplication([])
-
-    label = QLabel("Hello World")
-
-    label.show()
-
-    sys.exit(app.exec_())
+# Create the Qt Application
+app = QApplication(sys.argv)
+# Create a button, connect it and show it
+button = QPushButton("Click me")
+button.clicked.connect(say_hello)
+button.show()
+# Run the main Qt loop
+app.exec_()
