@@ -12,7 +12,7 @@ def ipcheck(fnip):
 ip_1 = 192
 ip_2 = 168
 ip_3 = 1
-ip_4 = 109
+ip_4 = 1
 ip = str(ip_1) + "." + str(ip_2) + "." + str(ip_3) + "." + str(ip_4)
 print(ip)
 output = sp.check_output(["ping", "-n", "1", ip]).decode('cp866', 'ignore')
